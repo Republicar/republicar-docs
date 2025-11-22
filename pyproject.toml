@@ -1,0 +1,29 @@
+# pyproject.toml for an MkDocs project
+
+[project]
+# --- Project Metadata and Dependencies ---
+# These settings define your project for packaging tools like pip.
+name = "my-docs"
+version = "0.1.0"
+description = "My documentation project"
+requires-python = ">=3.8"
+
+# List your project's dependencies here.
+# This replaces the need for a requirements.txt file.
+dependencies = [
+    "mkdocs-material",
+    "mkdocs-glightbox",
+    "mkdocs-minify-plugin"
+]
+
+
+[tool.mkdocs]
+# --- MkDocs Configuration ---
+# This section directly corresponds to your mkdocs.yml file.
+site_name = "My Docs"
+
+# Plugins are listed as an array.
+plugins = [
+    "glightbox",
+    "mkdocs-minify-plugin"
+]
